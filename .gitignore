@@ -1,0 +1,69 @@
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Kotlin ###
+.kotlin
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+/compiled/wcoll/1.bin
+/compiled/text/2.csv
+/compiled/text/3.csv
+/compiled/scripts/0305.bin
+/compiled/wcoll/0305.bin
+/compiled/scripts/0312.bin
+/compiled/wcoll/0312.bin
+/compiled/text/990.csv
+/compiled/text/997.csv
+/compiled/text/998.csv
+/compiled/text/999.csv
+/compiled/char_index.txt
+/compiled/char/extra-student.txt
+/compiled/char/hibiki.txt
+/compiled/char/narrator.txt
+/compiled/scripts/prologue.bin
+/compiled/char/script-names.txt
+/compiled/script_index.txt
+/compiled/char/sensei.txt
+/compiled/wcoll_index.txt
+/compiled/scripts/wcoll_test.bin
+/compiled/wcoll/wcoll_test.bin
+/compiled/char/word-coll-m.txt
+/compiled/char/word-coll-w.txt

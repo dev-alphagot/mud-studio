@@ -1,0 +1,20 @@
+[
+  {
+    "_name": "지나가던 아저씨",
+    "id": 1,
+    "locator": "pedestrian",
+    "color": "YELLOW"
+  },
+  {
+    "_name": "",
+    "id": 990,
+    "locator": "narrator",
+    "color": "GRAY"
+  },
+  {
+    "_name": "나",
+    "id": 991,
+    "locator": "me",
+    "color": "APRICOT"
+  }
+]

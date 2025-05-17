@@ -1,0 +1,37 @@
+bgmp 1
+chrs narrator
+text 당신은 어느 날, 그리 크지도 않고 작지도 않은 도로의 한구석에서 눈을 뜹니다.
+sela 1, 9, 주변을 둘러본다.
+sela 2, 15, 지나가는 사람에게 말을 건다.
+seld
+
+// blk 1
+text 주변에는 이제 막 문을 열고 있는 술집과, 손님 받을 준비를 하는 다른 가게들이@보입니다.
+text 풍경은 있지만, 가지고 있는 물건은 아무것도 없습니다.
+jump 4
+// blk 1 end
+
+// blk 2
+text 당신은 지나가던 아저씨에게 말을 겁니다. 이상한 냄새가 나는 것 같긴 하지만,@다른 사람들보다는 왠지 조금은 더 정감이 가는 듯합니다.
+chrs pedestrian
+text "여기가 어디냐고? 길이라도 잃은 거냐?"
+chrs narrator
+text 당신은 눈을 떴는데 여기에 있었다고 말합니다. 아저씨는 구름이 피어오르는@무언가를 꺼내며 당신에게도 피울 것을 권합니다.
+chrs pedestrian
+text "말도 안 되는 소리. 그러지 말고, 한 대 피울 생각 있냐?"
+chrs narrator
+text 당신은 아저씨가 건넨 물건을 보고 신기한 듯 쳐다봅니다.
+chrs pedestrian
+text "왜, 처음 보냐?"
+chrs me
+text "오랜만에 보긴 했죠."
+chrs pedestrian
+text "그래서, 필요 없냐?"
+chrs narrator
+text 당신은 권유를 정중하게 거절합니다. 잠깐의 인연이었지만, 아저씨는 원래@걸어가던 방향으로 떠납니다.
+sndp 1
+wait 143
+chrs narrator
+text 마침, 뱃고동 소리가 당신의 공복을 알립니다. 당신은 뭐라도 먹어야겠다고@생각하지만, 먹을 것도, 돈도 없습니다.
+// jump 4
+// blk 2 end
