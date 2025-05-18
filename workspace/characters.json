@@ -16,5 +16,11 @@
     "id": 991,
     "locator": "me",
     "color": "APRICOT"
+  },
+  {
+    "_name": "BGMINFO",
+    "id": 999,
+    "locator": "bgminfo",
+    "color": "WHITE"
   }
 ]

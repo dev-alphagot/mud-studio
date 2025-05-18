@@ -54,7 +54,6 @@ fun compile(){
             return tMap[cc.locator]!!.indexOf(s)
         }
 
-
         file.readLines().map { it.trim() }.forEachIndexed { pc, ln ->
             if(ln.isEmpty()){
                 opcodeSizes.add(0)
@@ -80,6 +79,7 @@ fun compile(){
                 "adds" -> 3
                 "subs" -> 3
                 "tclr" -> 2
+                "regs" -> 2
                 else  -> 0
             })
         }
@@ -87,7 +87,11 @@ fun compile(){
         fun jumpLocator(li: Int): Short {
             if(li <= 1) return 0
 
-            return opcodeSizes.subList(0, li - 1).sum().toShort() // li - 1 하는 게 맞음 (줄 번호를 1..n -> 0..n-1로 만드는 것)
+            return try {
+                opcodeSizes.subList(0, li - 1).sum().toShort() // li - 1 하는 게 맞음 (줄 번호를 1..n -> 0..n-1로 만드는 것)
+            } catch(_: Exception) {
+                (opcodeSizes.sum()).toShort()
+            }
         }
 
         file.readLines().map { it.trim() }.forEachIndexed { pc, lno ->
@@ -166,39 +170,39 @@ fun compile(){
                         0x0B.toByte().toByteArray() + opr.toShort().toByteArray()
                     )
                 }
-                "cgct" -> {
-                    ir.add(
-                        0x0C.toByte().toByteArray() + opr.toShort().toByteArray()
-                    )
-                }
                 "next" -> {
                     ir.add(
-                        0x0D.toByte().toByteArray() + sci.indexOf(opr).toShort().toByteArray()
+                        0x0C.toByte().toByteArray() + sci.indexOf(opr).toShort().toByteArray()
                     )
                 }
                 "addi" -> {
                     ir.add(
-                        0x0E.toByte().toByteArray() + opr.toByte().toByteArray()
+                        0x0D.toByte().toByteArray() + opr.toByte().toByteArray()
                     )
                 }
                 "subi" -> {
                     ir.add(
-                        0x0F.toByte().toByteArray() + opr.toByte().toByteArray()
+                        0x0E.toByte().toByteArray() + opr.toByte().toByteArray()
                     )
                 }
                 "adds" -> {
                     ir.add(
-                        0x10.toByte().toByteArray() + opr.toShort().toByteArray()
+                        0x0F.toByte().toByteArray() + opr.toShort().toByteArray()
                     )
                 }
                 "subs" -> {
                     ir.add(
-                        0x11.toByte().toByteArray() + opr.toShort().toByteArray()
+                        0x10.toByte().toByteArray() + opr.toShort().toByteArray()
                     )
                 }
                 "tclr" -> {
                     ir.add(
-                        0x12.toByte().toByteArray() + ConsoleColor.valueOf(opr).ordinal.toByte().toByteArray()
+                        0x11.toByte().toByteArray() + ConsoleColor.valueOf(opr).ordinal.toByte().toByteArray()
+                    )
+                }
+                "regs" -> {
+                    ir.add(
+                        0x12.toByte().toByteArray() + opr.toByte().toByteArray()
                     )
                 }
             }

@@ -1,0 +1,32 @@
+bgmp 2
+chrs pedestrian
+//text 당신은 아저씨를 따라갑니다. 다행히, 아저씨는 그리 멀리 가지 않아, 금방 다시@만납니다. 아저씨는 만나자마자 자신의 친구 얘기를 합니다. (줄바꿈 가이드)
+text "다시 본 김에, 내 친구 얘기를 좀 해야겠다."
+text "내 친구 중에 맨날 방에만 틀어박혀서 이상한 것만 하는 친구가 있거든?"
+wait 60
+chrs me
+text "...저기... 근데..."
+chrs pedestrian
+text "뭐? 담배는 아까 다 피웠다."
+chrs me
+text "아니... 그게 아니고..."
+chrs pedestrian
+text "그럼 뭔데?"
+chrs me
+text "...제가 진짜 배가 고파서 그런데요..."
+chrs pedestrian
+text "그래! 너 혹시 국밥 좋아하냐?"
+wait 60
+chrs me
+sela 1, 26, "좋아해요."
+sela 2, 26, "별로 좋아하진 않는데..."
+seld
+
+// blk 1
+chrs pedestrian
+text "좋아! 간만에 뜨끈-하게 얘기를 할 사람이 생겼구만."
+jump 32
+// blk 1 end
+
+// blk 2
+// blk 2 end

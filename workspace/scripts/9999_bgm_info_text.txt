@@ -1,0 +1,3 @@
+chrs bgminfo
+text 桐生 - Ｑ
+text a_hisa - Moon Rabbit (pitch -2)
