@@ -3,7 +3,8 @@
     "_name": "지나가던 아저씨",
     "id": 1,
     "locator": "pedestrian",
-    "color": "YELLOW"
+    "color": "YELLOW_M_700",
+    "_color": "YELLOW"
   },
   {
     "_name": "",
