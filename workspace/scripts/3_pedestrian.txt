@@ -2,12 +2,12 @@ bgmp 2
 chrs pedestrian
 wait 60 //text 당신은 아저씨를 따라갑니다. 다행히, 아저씨는 그리 멀리 가지 않아, 금방 다시@만납니다. 아저씨는 만나자마자 자신의 친구 얘기를 합니다. (줄바꿈 가이드)
 text "다시 본 김에, 내 친구 얘기를 좀 해야겠다."
-text "내 친구 중에 맨날 방에만 틀어박혀서 이상한 것만 하는 친구가 있거든?"
+text "내 친구 중에 맨날 방에만 틀어박혀서 이상한 짓만 하는 친구가 있거든."
 wait 60
 chrs me
 text "...저기... 근데..."
 chrs pedestrian
-text "뭐? 담배는 아까 다 피웠다."
+text "뭐? 담배는 아까 다 피웠는데."
 chrs me
 text "아니... 그게 아니고..."
 chrs pedestrian
@@ -50,3 +50,42 @@ cpjm 2, 52
 text "내가 알아서 시킨다? 국밥 좋아한다고 했으니까 대충 그냥 먹어."
 jump 53
 text "내가 특별히 사주는 것인 만큼, 이 집만의 국밥의 매력을 느껴봐."
+wait 120
+sndp 3
+chrs bowser_arbeiter
+text "주문하신 선지국밥이랑 뼈해장국 나왔습니다. 밑반찬 같은 건 저쪽에서@가져오시면 돼요."
+wait 60
+chrs pedestrian
+text "아무튼, 내가 아까 내 친구 얘기를 했잖아."
+text "걔가 며칠 전에 했던 말이 있어서 말이야."
+chrs me
+text "뭐라고 했는데요?"
+wait 30
+chrs pedestrian
+text "길에서 이상한 소리 하는 사람 보면 자기한테 데려오라고."
+chrs narrator
+text 당신은 아저씨가 '이상한 소리 하는 사람'이라고 말한 것에 기분이 조금 상합니다.
+wait 30
+chrs pedestrian
+text "걔가 요즘 이상한 걸 하는 것 같긴 하던데..."
+wait 60
+text "뭐, 아무튼 밥 다 먹고 친구네 집에나 가보자."
+chrs narrator
+sela 1, 79, 알겠다고 한다.
+sela 2, 83, 싫다고 한다.
+seld
+
+// blk 1
+jump 91
+// blk 1 end
+
+// blk 2
+chrs pedestrian
+text "뭐 다른 데 갈 곳 있냐?"
+chrs me
+text "...없긴 한데요."
+chrs pedestrian
+text "그럼 그냥 따라와라. 지금 시간도 시간이고, 자기가 데려오라고 했으니까@하룻밤 정도는 재워주겠지."
+// blk 2 end
+
+text TODO

@@ -7,6 +7,12 @@
     "_color": "YELLOW"
   },
   {
+    "_name": "국밥집 알바생",
+    "id": 2,
+    "locator": "bowser_arbeiter",
+    "color": "TEAL_M_A400"
+  },
+  {
     "_name": "",
     "id": 990,
     "locator": "narrator",
