@@ -1,1 +1,13 @@
 bgmp 1
+sndp 2
+wait 180
+sndp 2
+wait 180
+chrs narrator
+text 한참을 걸었지만, 당신을 기다린 것은 '공사중' 표지판뿐입니다.
+wait 60
+tclr DARKRED
+text 아무래도 여기까지인 것 같습니다.
+wait 120
+tclr BLACK
+text (다시 시작하려면 게임을 껐다 켜주세요)

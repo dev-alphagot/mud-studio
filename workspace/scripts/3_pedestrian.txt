@@ -76,10 +76,11 @@ sela 2, 83, 싫다고 한다.
 seld
 
 // blk 1
-jump 91
+jump 92
 // blk 1 end
 
 // blk 2
+wait 45
 chrs pedestrian
 text "뭐 다른 데 갈 곳 있냐?"
 chrs me
@@ -88,4 +89,46 @@ chrs pedestrian
 text "그럼 그냥 따라와라. 지금 시간도 시간이고, 자기가 데려오라고 했으니까@하룻밤 정도는 재워주겠지."
 // blk 2 end
 
-text TODO
+wait 300
+chrs narrator
+text 당신은 간신히 국밥 한 그릇을 비웁니다. 아저씨는 기다렸다는 듯이 자리에서@일어납니다.
+wait 45
+chrs pedestrian
+text "여기 계산!"
+chrs bowser_arbeiter
+text "선지국밥 하나, 뼈해장국 하나 해서 총 삼만 원입니다."
+chrs pedestrian
+text "뭐?"
+tclr RED
+text "삼만 원이라고? 뭐가 잘못된 거 아냐?"
+tclr BLACK // == RESET (리셋 만들기 귀찮음)
+chrs bowser_arbeiter
+text "선지국밥이 만육천 원, 뼈해장국이 만사천 원입니다."
+wait 75
+chrs pedestrian
+text "내가 집에 돈을 두고 와서 그런데, 나중에 낼 테니까 외상 좀 해줘."
+chrs bowser_arbeiter
+text "그래서 지금 외상 값이 얼마나 쌓였죠?"
+chrs pedestrian
+text "에이, 그거 저번에 다 냈잖아."
+wait 50
+chrs bowser_arbeiter
+text "아, 그럼 가세요."
+wait 60
+chrs narrator
+text 당신은 아저씨와 국밥집에서 나옵니다.
+wait 60
+chrs me
+text "평소에도 자주 가시나봐요? 외상도 해주는 걸 보니."
+chrs pedestrian
+text "나야 뭐 그렇지. 사실 몇 달째 밀리는 중이긴 하지만."
+wait 45
+chrs me
+text "네?"
+wait 15
+chrs pedestrian
+text "이따 가면 걔한테 내달라고 하지 뭐. 맨날 이상한 거나 하는 거 보니까@돈 많은 것 같던데."
+wait 135
+chrs narrator
+text 이런저런 얘기를 하다보니, 어느 작은 건물이 눈앞에 보입니다. 당신은 아저씨를 따라@안으로 들어갑니다.
+next 4_lab
