@@ -1,3 +1,51 @@
 bgmp 4
-chrs me
+chrs pedestrian
+text "여긴 또 그새 돼지우리가 됐냐."
+chrs pedestrian_friend
+text "아니 뭐 그럴 수도 있는 거지."
+wait 30
+text "근데 넌 누구니...?"
+chrs pedestrian
+text "네가 이상한 사람 있으면 데려오라며. 근데 그건 그렇고, 돈이나 좀 줘봐."
+chrs pedestrian_friend
+text "무슨 돈?"
+wait 15
+chrs pedestrian
+text "성공보수. 뭐, 싫으면 다시 돌려보내고."
+chrs pedestrian_friend
+text "일단 좀 보고. 네가 분명히 '성공보수'라고 했으니까."
+chrs pedestrian
+text "거 더럽게 째째하게 구네. 아무튼, 난 이제 간다."
+chrs pedestrian_friend
+text "잘가. 또 애먼 사람이랑 시비 붙지 말고."
+sndp 4
+wait 150
+text "이제 본론으로 들어가야 할 것 같은데.@   우선, 오늘 있던 일을 순서대로 전부 말해줘."
+chrs narrator
+sela 1, 30, 말한다.
+sela 2, 35, 말하지 않는다.
+seld
+
+// blk 1
+jump 99
+// blk 1 end
+
+// blk 2
+// text 한참을 걸은 끝에, 낯익은 옆모습을 발견합니다. 때마침, 옆모습의 주인공 또한 당신을 향해@고개를 돌립니다.
+wait 25
+text 당신은 조금 미심쩍은 듯한 표정을 지으며 침묵을 유지합니다. 해가 떨어질 시간이라@그런지, 아니면 아저씨와 떨어져서 그런 건지, 미묘한 냉랭함만이 감돕니다.
+wait 300
+chrs pedestrian_friend
+text "너한테는 아무 짓도 안 할 거야. 그래도 못 믿겠다면, 기다려줄게."
+wait 90
+bgmp 3
+text "기다리면서 아무 일도 안 하는 건 좀 그러니까, 내 얘기라도 해줄게."
+wait 60
+text "나는 말이야, 지금은 좀 지저분하긴 해도 그럭저럭 살고는 있지만, 예전에는@여러 가지 사정으로 도로에서 전전긍긍하며 하루살이 같은 인생을 살았어."
+text "그런데, 아저씨가 나타나더니 자기 집에서 같이 살자는 거야. 난 당연히 좋다고@했고, 그때부터 여기서 살기 시작했어."
+text "지금은 어쩌다 보니 내가 아저씨보다 돈을 더 많이 벌고 있기는 하지만."
+text "아, 아저씨 얘기가 나와서 그런데, 아까 나갔으니까 아마 내일 밤쯤 들어올 거야."
+// blk 2 end
+
+bgmp 4
 text TODO

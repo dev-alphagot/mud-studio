@@ -13,6 +13,12 @@
     "color": "TEAL_M_A400"
   },
   {
+    "_name": "아저씨의 친구",
+    "id": 3,
+    "locator": "pedestrian_friend",
+    "color": "DEEPPURPLE_M_A200"
+  },
+  {
     "_name": "",
     "id": 990,
     "locator": "narrator",
