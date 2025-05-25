@@ -80,6 +80,7 @@ fun compile(){
                 "subs" -> 3
                 "tclr" -> 2
                 "regs" -> 2
+                "clea" -> 1
                 else  -> 0
             })
         }
@@ -203,6 +204,11 @@ fun compile(){
                 "regs" -> {
                     ir.add(
                         0x12.toByte().toByteArray() + opr.toByte().toByteArray()
+                    )
+                }
+                "clea" -> {
+                    ir.add(
+                        0x13.toByte().toByteArray()
                     )
                 }
             }
