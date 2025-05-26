@@ -93,5 +93,6 @@ text 얘기를 듣다 보니, 어느새 조금은 희뿌연 달이 문틈 사이
 wait 15
 chrs pedestrian_friend
 text "저쪽 침대에서 자면 돼. 원래 아저씨 거긴 한데 당장은 남는 게 없어서 말이야.@   내일 날 밝으면 새로 이불이라도 하나 사와야지 뭐."
+wait 180
 clea
 next 5_second_day

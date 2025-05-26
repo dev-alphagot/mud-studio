@@ -19,6 +19,24 @@
     "color": "DEEPPURPLE_M_A200"
   },
   {
+    "_name": "전자제품 가게 주인",
+    "id": 4,
+    "locator": "old_shop_owner",
+    "color": "BURLYWOOD_CSS"
+  },
+  {
+    "_name": "연성준",
+    "id": 5,
+    "locator": "yeonsj",
+    "color": "DEEPPURPLE_M_A200"
+  },
+  {
+    "_name": "노경태",
+    "id": 6,
+    "locator": "nohgt",
+    "color": "YELLOW_M_700"
+  },
+  {
     "_name": "",
     "id": 990,
     "locator": "narrator",

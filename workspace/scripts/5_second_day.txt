@@ -1,4 +1,59 @@
-wait 360
+wait 180
 bgmp 4
 chrs narrator
 text 자그마한 새소리와 함께, 당신은 침대에서 일어납니다. 아저씨는 그새 들어와@소파에서 대충 잠을 자고 있습니다.
+wait 90
+chrs pedestrian_friend
+text "일어났어? 그럼 일어난 김에 이불이나 사러 가자."
+wait 60
+chrs narrator
+text 당신은 적당히 나갈 채비를 합니다.
+wait 15
+sndp 4
+wait 210
+text 당신은 소파에서 새우잠을 자는 아저씨를 뒤로하고 밖으로 나갑니다. 햇살이 비치니@풍경이 조금은 덜 삭막해 보이는 듯합니다.
+wait 60
+sndp 2
+wait 180
+sndp 2
+wait 180
+rgld 2
+cpjm 4, 24
+text 당신은 아저씨의 친구를 따라갑니다. 어딘가 익숙한 길가를 지나, 어제 봤던 오래된@전자제품 가게에 도착합니다.
+jump 25
+text 당신은 아저씨의 친구를 따라갑니다. 낯설기만 한 길가를 지나, 이불은 절대 팔지@않을 것 같은 오래된 전자제품 가게에 도착합니다.
+text 당신이 처음 만난 아저씨는 아니지만, 어쨌거나, 아저씨는 뜬금없이 가게로@들어갑니다.
+bgmp 5
+wait 35
+chrs pedestrian_friend
+text "여기 이불도 팔죠?"
+wait 15
+chrs old_shop_owner
+text "무슨 여기가 만물상인 줄 알아."
+chrs pedestrian_friend
+text "그렇게 말하는 것 치곤 아무거나 다 팔긴 하잖아요. 아무튼, 이불 팔죠?"
+wait 20
+chrs narrator
+text 당신은 옆에서 대화를 들으며 속으로 여기서 이불을 팔 리가 없다고 생각합니다.
+chrs old_shop_owner
+text "이만 원. 촌스러운 꽃무늬 이불 말곤 다 팔렸어."
+wait 25
+chrs pedestrian_friend
+text "여기요."
+wait 45
+chrs narrator
+text 당신은 왜 이불을 이런 곳에서 파는지에 대한 의문을 품은 채 가게를 나옵니다.@집으로 돌아가면서 아저씨와 이런저런 얘기를 나눕니다.
+sndp 2
+wait 30
+chrs pedestrian_friend
+text "근데 말이야, 네 이름은 뭐니?"
+chrs narrator
+text 당신은 이름을 얘기합니다. 이름 얘기가 나온 김에, 문득 아저씨의 이름이@궁금해집니다.
+chrs pedestrian_friend
+text "어... 나 말이야? 뭐, 이제 슬슬 아저씨라고 불릴 나이가 되긴 했지."
+chrs yeonsj
+text "내 이름은 '연성준'이야. 성씨가 좀 특이하지?"
+chrs me
+text "그럼 그 아저씨는 이름이 뭐예요?"
+chrs yeonsj
+text "아저씨는 자기 말로는 '노경태'가 이름이라던데, 혹시 모르지. 대충 아무 이름이나@지어낸 걸지도."
