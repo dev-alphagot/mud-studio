@@ -10,4 +10,5 @@ tclr DARKRED
 text 아무래도 여기까지인 것 같습니다.
 wait 120
 tclr BLACK
-text (다시 시작하려면 게임을 껐다 켜주세요)
+// END!
+RST!

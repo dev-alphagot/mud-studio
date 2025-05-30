@@ -81,6 +81,8 @@ fun compile(){
                 "tclr" -> 2
                 "regs" -> 2
                 "clea" -> 1
+                "RST!" -> 1
+                "END!" -> 1
                 else  -> 0
             })
         }
@@ -209,6 +211,16 @@ fun compile(){
                 "clea" -> {
                     ir.add(
                         0x13.toByte().toByteArray()
+                    )
+                }
+                "RST!" -> {
+                    ir.add(
+                        0x14.toByte().toByteArray()
+                    )
+                }
+                "END!" -> {
+                    ir.add(
+                        0x15.toByte().toByteArray()
                     )
                 }
             }
