@@ -234,13 +234,23 @@ fun compile(){
         println("${file.nameWithoutExtension} COMPLETED")
     }
 
-    tMap.forEach {
-        File("compiled/text/${chars[it.key]!!.id}.csv").writeText(
-            it.value.mapIndexed { id, str ->
-                "${id}\t${str}"
-            }.joinToString("\n")
+    chars.forEach { s, c ->
+        File("compiled/text/${c.id}.csv").writeText(
+            (
+                    tMap[s]?.mapIndexed { id, str ->
+                        "${id}\t${str}"
+                    }?.joinToString("\n") ?: "0\t${c._name}"
+            )
         )
     }
+
+//    tMap.forEach {
+//        File("compiled/text/${chars[it.key]!!.id}.csv").writeText(
+//            it.value.mapIndexed { id, str ->
+//                "${id}\t${str}"
+//            }.joinToString("\n")
+//        )
+//    }
 
     File("compiled/script_index.txt").writeText(sci.joinToString("\n"))
 
