@@ -234,7 +234,7 @@ fun compile(){
         println("${file.nameWithoutExtension} COMPLETED")
     }
 
-    chars.forEach { s, c ->
+    chars.forEach { (s, c) ->
         File("compiled/text/${c.id}.csv").writeText(
             (
                     tMap[s]?.mapIndexed { id, str ->
